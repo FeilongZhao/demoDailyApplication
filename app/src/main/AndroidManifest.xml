@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lcu.cs.demodailyapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.thinkland.juheapi.openid"
+            android:value="JHaf5037b508f1da4db7fa3cd9c1bdf915" />
+
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".com.lcu.cs.register.LoginIn"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".com.lcu.cs.register.Register" />
+        <activity android:name=".com.lcu.cs.register.TestRegister" />
+        <activity android:name=".com.lcu.cs.tuling.tuLing"></activity>
+        <activity android:name=".com.lcu.cs.word.Word" />
+        <activity android:name=".com.lcu.cs.weather.Weather" />
+        <activity android:name=".com.lcu.cs.car.Car" />
+        <activity android:name=".com.lcu.cs.TuLingNet.TuLingNet"></activity>
+    </application>
+
+</manifest>
